@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Prevent window.fetch only-getter TypeError in sandbox/iframe environments -->
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          var fetchValue = originalFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return fetchValue || originalFetch;
+            },
+            set: function(val) {
+              fetchValue = val;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          console.warn('Failed to define window.fetch property descriptor:', e);
+        }
+      })();
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2563eb" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Dr. Phadatare Dental Clinic | Best Dentist in Hadapsar, Pune</title>
+    <meta name="description" content="Looking for the best dentist in Hadapsar, Pune? Dr. Phadatare Dental offers premium, pain-free dental implants, root canals, laser dentistry, and teeth whitening. ⭐ 5.0 Google Rating." />
+    <meta name="keywords" content="Best Dentist in Hadapsar, Best Dentist in Pune, Dental Clinic in Hadapsar, Root Canal Treatment Pune, Teeth Whitening Pune, Dental Implants Pune, Cosmetic Dentist Pune, Family Dentist Pune, Emergency Dentist Hadapsar, Dental Clinic Near Me" />
+    <meta name="author" content="Dr. Phadatare Dental Clinic" />
+    
+    <!-- Canonical and Indexing Rules -->
+    <link rel="canonical" href="https://drphadataredental.com" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- Open Graph / Facebook Social Media Meta Tags -->
+    <meta property="og:type" content="business.business" />
+    <meta property="og:title" content="Dr. Phadatare Dental Clinic | Best Dentist in Hadapsar, Pune" />
+    <meta property="og:description" content="Healthy Smiles. Trusted Dental Care. Visit Pune's premium, family-friendly dental clinic with a perfect 5.0 Google rating." />
+    <meta property="og:image" content="https://drphadataredental.com/src/assets/images/clinic_hero_family_1783529321452.jpg" />
+    <meta property="og:url" content="https://drphadataredental.com" />
+    <meta property="og:site_name" content="Dr. Phadatare Dental Clinic" />
+    <meta property="business:contact_data:street_address" content="Flat-2, Ajinkyatara Kamdhenu Estate, Near Avirat Academy, Opposite Mahalaxmi Hotel, Hadapsar" />
+    <meta property="business:contact_data:locality" content="Pune" />
+    <meta property="business:contact_data:region" content="Maharashtra" />
+    <meta property="business:contact_data:postal_code" content="411028" />
+    <meta property="business:contact_data:country_name" content="India" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dr. Phadatare Dental Clinic | Best Dentist in Hadapsar, Pune" />
+    <meta name="twitter:description" content="Looking for the best dentist in Hadapsar, Pune? Dr. Phadatare Dental offers premium, pain-free dental implants, root canals, laser dentistry, and teeth whitening." />
+    <meta name="twitter:image" content="https://drphadataredental.com/src/assets/images/clinic_hero_family_1783529321452.jpg" />
+
+    <!-- Icons & Manifest Setup -->
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.json" />
+
+    <!-- Performance: Preconnect to Font Servers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Unified Schema.org Structured Data (JSON-LD Graph) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Dentist",
+            "@id": "https://drphadataredental.com/#dentist",
+            "name": "Dr. Phadatare Dental Clinic",
+            "url": "https://drphadataredental.com",
+            "logo": "https://drphadataredental.com/favicon.svg",
+            "image": "https://drphadataredental.com/src/assets/images/clinic_hero_family_1783529321452.jpg",
+            "description": "Premium healthcare website for Dr. Phadatare Dental Clinic in Hadapsar, Pune. Discover trusted dental care, cosmetic dentistry, implants, and laser treatments.",
+            "telephone": "+919767437855",
+            "email": "info@drphadataredental.com",
+            "priceRange": "$$",
+            "paymentAccepted": "Cash, Credit Card, Debit Card, UPI, Net Banking",
+            "areaServed": [
+              {
+                "@type": "AdministrativeArea",
+                "name": "Hadapsar"
+              },
+              {
+                "@type": "AdministrativeArea",
+                "name": "Pune"
+              },
+              {
+                "@type": "AdministrativeArea",
+                "name": "Maharashtra"
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Flat-2, Ajinkyatara Kamdhenu Estate, Near Avirat Academy, Opposite Mahalaxmi Hotel, Hadapsar",
+              "addressLocality": "Pune",
+              "addressRegion": "Maharashtra",
+              "postalCode": "411028",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "18.50524458258671",
+              "longitude": "73.92644267501235"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday"
+                ],
+                "opens": "10:00",
+                "closes": "20:30"
+              }
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+919767437855",
+              "contactType": "customer service",
+              "areaServed": "IN",
+              "availableLanguage": ["en", "hi", "mr"]
+            },
+            "sameAs": [
+              "https://www.facebook.com/drphadataredental",
+              "https://www.instagram.com/drphadataredental",
+              "https://twitter.com/drphadataredental"
+            ],
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5.0",
+              "reviewCount": "317",
+              "bestRating": "5",
+              "worstRating": "1"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://drphadataredental.com/#website",
+            "url": "https://drphadataredental.com",
+            "name": "Dr. Phadatare Dental Clinic",
+            "description": "Premium healthcare website for Dr. Phadatare Dental Clinic in Hadapsar, Pune.",
+            "publisher": {
+              "@id": "https://drphadataredental.com/#dentist"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://drphadataredental.com/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://drphadataredental.com"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://drphadataredental.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do you provide emergency dental treatment?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we offer emergency dental appointments on the same day for cases involving severe dental pain, knocked-out or broken teeth, swollen gums, or tooth infections. Please contact us at +91 97674 37855 immediately."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does teeth whitening take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our professional chairside dental whitening treatment takes approximately 45 to 60 minutes in a single visit and can brighten your teeth up to 8 shades instantly using safe curing-light technology."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is root canal treatment painful?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No, root canal treatments at our clinic are completely pain-free. We use modern rotary files, highly effective local anesthesia, and soft laser systems. Most patients feel immediate relief from the toothache rather than pain during the procedure."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you treat children?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we love working with children! Dr. Phadatare and our patient staff are highly experienced in pediatric dentistry, providing gentle cleanings, milk-teeth fillings, extractions, and protective fluoride application."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What payment methods are accepted?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We accept all major credit/debit cards, UPI payments (GPay, PhonePe, Paytm), net banking, as well as cash. We also offer easy installment estimates for advanced procedures like implants and orthodontics."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need an appointment?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "While we do accommodate walk-ins for emergencies, we highly recommend booking an appointment in advance. This ensures minimal wait times and guarantees dedicated, unhurried time with Dr. Phadatare. You can book directly using our website form or by calling +91 97674 37855."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

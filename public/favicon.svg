@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="brand-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#0d9488" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <!-- Rounded Base Card -->
+  <rect x="5" y="5" width="90" height="90" rx="24" fill="url(#brand-grad)" filter="url(#shadow)" />
+  <!-- White Abstract Tooth Icon -->
+  <path d="M50,22 C41,22 34,26 34,36 C34,48 42,52 42,66 C42,74 38,78 44,78 C48,78 48,74 50,71 C52,74 52,78 56,78 C62,78 58,74 58,66 C58,52 66,48 66,36 C66,26 59,22 50,22 Z" fill="#ffffff" />
+  <!-- Accent Inner Sparkle/Shine -->
+  <path d="M43,30 C41,30 39,32 39,35 C39,38 41,38 41,36 C41,33 43,32 45,32 C46,32 46,30 43,30 Z" fill="#e0f2fe" opacity="0.8" />
+  <!-- Small Star Sparkle -->
+  <path d="M60,28 L61.5,31 L64.5,31.5 L62,33.5 L63,36.5 L60,34.5 L57,36.5 L58,33.5 L55.5,31.5 L58.5,31 Z" fill="#facc15" />
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "Dr. Phadatare Dental",
+  "description": "Premium healthcare website for Dr. Phadatare Dental Clinic in Hadapsar, Pune. Discover trusted dental care, cosmetic dentistry, implants, and laser treatments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
