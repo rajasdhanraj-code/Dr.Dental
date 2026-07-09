@@ -3,11 +3,13 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 export default defineConfig(() => {
   return {
     // 💡 Dynamic base path: Uses '/' for Cloudflare, '/Dr.Dental/' for GitHub Pages
     base: process.env.CF_PAGES === '1' ? '/' : '/Dr.Dental/', 
-    plugins: [react(), tailwindcss()],
+    plugins: [react(), tailwindcss(), cloudflare()],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
