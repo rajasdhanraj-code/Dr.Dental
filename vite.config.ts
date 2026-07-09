@@ -5,7 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/Dr.Dental/', // 👈 Updated with your exact repository name
+    // 💡 Dynamic base path: Uses '/' for Cloudflare, '/Dr.Dental/' for GitHub Pages
+    base: process.env.CF_PAGES === '1' ? '/' : '/Dr.Dental/', 
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
